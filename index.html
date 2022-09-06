@@ -37,7 +37,7 @@
             <h1 class="text-white fw-bold text-center mt-4 mb-4 d-none" id="hilang2">Scan barcode ini dong...</h1>
         </div>
         <div class="d-flex justify-content-center">
-                <video width="80%" height="auto" autoplay loop id="image">
+                <video id="intro" width="80%" height="auto" autoplay loop id="image">
                     <source src="meme3.mp4" type="video/mp4">
                 </video>
                 <img class="img-thumbnail d-none" src="qr-code.png" alt="QRCODE" width="70%" height="auto" id="image2">
@@ -62,7 +62,9 @@
 // 		});
 // 	    });
 	    window.addEventListener("load", () => {
-	   console.log("Test");
+	   var vid = document.getElementById("intro");
+		    vid.autoplay = true;
+  		vid.load();
 	});
 	    
         function klik() {
